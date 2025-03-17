@@ -19,7 +19,7 @@ const Homepage = () => {
                   <img className='w-full' src={img3} alt="" />
                   <ul className=' absolute inset-0 flex mt-8  space-x-5 text-white font-bold pl-18 text-2xl  '>
                       <li className='text-4xl'> <IoMdHome /></li>
-                        <li >Home</li>
+                         <Link to ='/'> <li >Home</li></Link>
                          <li className='mt-2'><FaGreaterThan/></li>
                           <li>Service</li>
         
