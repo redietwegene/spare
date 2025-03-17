@@ -1,19 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import img1 from '../assets/image 14.png';
 import { CiSearch, CiCalendar, CiLocationOn, CiTimer } from "react-icons/ci";
 import Category from './catagories/catagories';
 import Feature from './Features/Feature';
+import img3 from '../assets/image 15.png';
+import img25 from '../assets/image 25.png'; 
+import img26 from '../assets/image 26.png';
+import img27 from '../assets/image 27.png';
+import img10 from '../assets/image 16.png';
 
 const Landingpage = () => {
   const [activeTab, setActiveTab] = useState('onsite');
+  const images = [img1, img25, img3, img26, img27, img10];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false); 
+      setTimeout(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setFade(true); 
+      }, 500); 
+    }, 5000); 
+
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   return (
     <>
-      <div className='relative w-full'>
-        <img className='w-full h-auto object-cover' src={img1} alt="" />
-
       
+      <div className='relative w-full'>
+             <img
+            className={`w-full  object-cover transition-opacity duration-500 ease-in-out ${fade ? 'opacity-100' : 'opacity-90'}`}
+            src={images[currentImageIndex]}
+            alt={`Slide ${currentImageIndex + 1}`}
+        />
+        </div>
         <ul className='absolute inset-0 flex flex-wrap justify-center gap-3 md:mt-8 space-x-6 text-white font-bold text-xs md:text-base'>
           <li className='text-white'>Companion</li>
           <Link to='/helper'><li>Moving Helper</li></Link>
@@ -119,7 +143,7 @@ const Landingpage = () => {
 
         <Feature />
         <Category />
-      </div>
+     
     </>
   );
 }

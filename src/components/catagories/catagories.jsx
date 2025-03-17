@@ -3,12 +3,12 @@ import categories from './catagoriesData';
 
 const Category = () => {
   return (
-    <div className="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-black font-epilogue text-3xl sm:text-4xl lg:text-5xl mb-8 text-center sm:text-left">
+    <div className="max-w-6xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
+      <h1 className="text-black  font-epilogue text-3xl sm:text-4xl lg:text-4xl mb-8 text-center sm:text-left">
         Explore the Marketplace
       </h1>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 sm:gap-7">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 sm:gap-7">
         {categories.map((category, index) => (
           <div
             key={index}
