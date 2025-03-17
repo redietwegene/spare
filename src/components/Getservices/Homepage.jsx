@@ -6,7 +6,7 @@ import { IoMdHome } from "react-icons/io";
 import RecentService from './RecentService';
 import { FaGreaterThan } from "react-icons/fa";
 import Category from '../catagories/catagories';
-import { Link } from 'react-router-dom';
+import Contactus from '../contactus';
 
 
 

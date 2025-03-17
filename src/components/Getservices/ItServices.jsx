@@ -5,7 +5,7 @@ import img10 from '../../assets/image 16.png'
 import Services from './Services';
 import { FaGreaterThan } from "react-icons/fa";
 import { IoMdHome } from "react-icons/io";
-import { Link } from 'react-router-dom';
+import Contactus from '../contactus';
 const ItServices = () => {
     return (
         <>
