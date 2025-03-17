@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-between bg-white font-epilogue mt-8 mb-2 relative">
+      <div className="flex flex-col md:flex-row justify-between bg-white font-epilogue mt-8 mb-2 relative overflow-hidden">
         <div className="flex justify-between items-center px-7">
           <h4 className="text-spare text-2xl font-semibold">
             SpareWork

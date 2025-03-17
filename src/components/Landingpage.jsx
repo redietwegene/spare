@@ -37,7 +37,6 @@ const Landingpage = () => {
             src={images[currentImageIndex]}
             alt={`Slide ${currentImageIndex + 1}`}
         />
-        </div>
         <ul className='absolute inset-0 flex flex-wrap justify-center gap-3 md:mt-8 space-x-6 text-white font-bold text-xs md:text-base'>
           <li className='text-white'>Companion</li>
           <Link to='/helper'><li>Moving Helper</li></Link>
@@ -48,6 +47,8 @@ const Landingpage = () => {
           <Link to='/graphics'><li>Web Designer</li></Link>
           <li>More</li>
         </ul>
+        </div>
+        
 
        
         <div className="absolute top-20 md:top-40 left-4 md:left-32 text-white px-4 md:px-0">
