@@ -2,15 +2,18 @@ import React from 'react';
 import categories from './catagoriesData';
 
 const Category = () => {
-return (
-    <div className="max-w-5xl mx-auto py-10 px-4">
-        <h1 className='text-black font-epilogue text-3xl mb-8'>Explore the Marketplace</h1>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-7">
+  return (
+    <div className="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
+      <h1 className="text-black font-epilogue text-3xl sm:text-4xl lg:text-5xl mb-8 text-center sm:text-left">
+        Explore the Marketplace
+      </h1>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 sm:gap-7">
         {categories.map((category, index) => (
           <div
             key={index}
-            className="group flex flex-col justify-center items-start text-start border-1 border-gray-300  p-6 cursor-pointer transition-all duration-300
-                       bg-white hover:bg-blue-500"
+            className="group flex flex-col justify-center items-start text-start border border-gray-300 p-4 sm:p-6 cursor-pointer transition-all duration-300
+                       bg-white hover:bg-blue-500 rounded-lg shadow-sm hover:shadow-md"
           >
             <category.icon
               size={40}
