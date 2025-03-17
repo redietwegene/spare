@@ -23,7 +23,7 @@ const Landingpage = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
         setFade(true); 
       }, 500); 
-    }, 5000); 
+    }, 2000); 
 
     return () => clearInterval(interval);
   }, [images.length]);

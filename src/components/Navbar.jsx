@@ -28,8 +28,8 @@ const Navbar = () => {
         </div>
 
         {/* Menu Links */}
-        <div className={`flex-col md:flex md:flex-row justify-center ${menuOpen ? 'flex' : 'hidden'} md:flex`}>
-          <ul className="flex flex-col md:flex-row gap-5 md:gap-10 text-nav items-center md:items-start mt-4 md:mt-0">
+        <div className={` flex-col mt-2 md:flex md:flex-row justify-center ${menuOpen ? 'flex' : 'hidden'} md:flex`}>
+          <ul className=" flex flex-col md:flex-row gap-5 md:gap-10 text-nav items-center md:items-start mt-3 md:mt-0">
             <li>
               <NavLink
                 to="/getservice"
