@@ -33,7 +33,7 @@ const Cleaning = () => {
                             <div className='border-1 border-blue rounded-2xl p-20 w-[300px] h-[320px]'></div>
                             <img
                             src={img12}
-                            className='absolute bottom-50 left-15 w-[150px] md:w-auto'
+                            className='absolute bottom-30 left-15 w-[150px] md:w-auto'
                             alt=''
                             />
                             <p className='bg-white w-90 shadow-2xl p-8 absolute top-40 left-45 rounded-2xl max-w-sm text-sm sm:text-base'>
